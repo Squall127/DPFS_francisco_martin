@@ -20,6 +20,19 @@ Un espacio dirigido a usuarios adultos y hogareños con interés por las artesan
 
 5. Nuka: sitio dedicado a la venta de un único tipo de producto. La interfaz de usuario se centra en una experiencia sensorial que convence al interesado por medio de gráficas atractivas que describen el producto y lo hacen formar parte de un viaje interactivo. Una modalidad de estética inmersiva sería ideal para Ponucha.
 
+-
+
 SOBRE MÍ
 
 Mi nombre es Francisco, tengo 24 años y soy estudiante de la Licenciatura de Artes Audiovisuales. Siempre me ha apasionado el mundo del arte, la narrativa y los videojuegos. Considero que este curso me podría servir para obtener herramientas que potencien mi carrera como artista.
+
+-
+
+Link al Tablero de Trabajo en TRELLO
+
+https://trello.com/b/yU0qOXcq/ponucha-sitio-web
+
+
+
+
+- Francisco Martín -
