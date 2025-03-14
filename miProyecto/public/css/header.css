@@ -1,0 +1,55 @@
+.header--container {
+    background-color: #fff2e2;
+    position: sticky;
+}
+
+.header--logo {
+    color: #B80F0A;
+    font-family:"Delius Swash Caps", cursive;
+    text-align: center;
+    align-items:baseline
+}
+
+.header--nav-desktop{
+    font-family: "Borel", cursive;
+}
+
+.header--nav-desktop div{
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    align-items: center;
+}
+
+.header--nav-desktop li{
+    padding-right: 40px;
+    padding-left: 40px;
+}
+
+.header--nav-desktop li:hover {
+    color: #B80F0A;
+}
+
+@media (width > 1024px) {
+    .header--container {
+        display: flex;
+        flex-direction: row;
+        align-items:baseline;
+        justify-content: space-between;
+        padding: 10px;
+    }
+
+    .header--logo {
+        font-size: 60px;
+        margin-bottom: 20px;
+        margin-left: 20px;
+    }
+
+    .header--nav-desktop{
+        font-size: 25px;
+    }
+
+    .header--nav-desktop li:hover {
+        font-size: 26px;
+    }
+}
