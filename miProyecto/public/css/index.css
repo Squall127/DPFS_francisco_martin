@@ -1,3 +1,70 @@
 body {
     background-color:bisque;
 }
+
+/* SECCIÓN PORTADA */
+
+.intro {
+    display: flex;
+    background-image:url(/images/backgrounds/9328775.jpg);
+    background-position-y: 100%;
+    background-blend-mode:overlay;
+    background-color: rgba(255, 255, 255, 0.6);
+    flex-wrap: wrap;
+    flex-direction: row;
+    padding: 150px;
+    padding-bottom:20px;
+}
+
+.intro-image {
+    inline-size: 50%;
+}
+
+.intro-text {
+    width: max-content;
+    text-align:right;
+    align-content:flex-end;
+    font-family: "Borel", cursive;
+    font-size: 50px;
+    padding-bottom: 20px;
+    padding-left: 80px;
+}
+
+/* SECCIÓN TIPO DE PRODUCTO 1 */
+
+.type-product-plate {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 30px;
+    background-color:rgb(255, 249, 241,0.5);
+    margin: 10px;
+}
+
+.type-product-cup {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 30px;
+    background-color:rgb(255, 249, 241,0.5);
+}
+
+.type-product-name {
+    font-family: "Borel", cursive;
+    font-size: 50px;
+    text-align: center;
+}
+
+.flex-types-product {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items:center;
+    margin-left: 300px;
+    margin-right: 300px;
+}
+
+.type-name {
+    text-align:center;
+    font-family: "Borel", cursive;
+}
