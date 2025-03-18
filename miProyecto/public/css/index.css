@@ -21,6 +21,20 @@ body {
 }
 
 .intro-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}
+
+.intro-logo {
+        color: #B80F0A;
+        font-family:"Delius Swash Caps", cursive;
+        text-align: center;
+        font-size: 120px;
+        padding: 30px;
+}
+
+.intro-legend {
     width: max-content;
     text-align:right;
     align-content:flex-end;
