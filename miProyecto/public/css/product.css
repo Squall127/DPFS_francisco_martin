@@ -1,0 +1,39 @@
+body {
+    background-color:bisque;
+}
+
+p {
+    font-family: "Borel", cursive;
+}
+
+.product {
+    display: flex;
+    flex-direction: column;
+    padding-top: 50px;
+    justify-content: center;
+    text-align: center;
+}
+
+.product-name {
+    font-size: 20px;
+}
+
+.product--choice-premise {
+    font-size: 30px;
+}
+
+.product--choice-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-left: 180px;
+    margin-right: 180px;
+}
+
+.product--choice-designs-flex {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 2px;
+}
