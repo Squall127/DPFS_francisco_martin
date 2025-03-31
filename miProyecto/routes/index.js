@@ -8,5 +8,7 @@ router.get('/', function(req, res, next) {
 });
 
 router.get('/product',indexController.product);
+router.get('/login',indexController.login);
+router.get('/register',indexController.register);
 
 module.exports = router;

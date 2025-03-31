@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <%- include('./partials/head',{
+    title : 'Login'
+  }) %>
+  <body>
+    <%- include('./partials/header') %>
+    <main>
+        <div class="nav_menu">
+            <div class="box--admin">
+                <p class="header--title">Administrador</p>
+            </div>
+            <div class="box--register">
+                <a href="/users/register" class="register">Registrarse</a>
+            </div>
+        </div>            
+        <div class="card--form">
+                <h4 class="card-title">Login</h4>
+                <!-- Formulario para logearse -->
+                <form class="access-form" method="POST">
+                    <!-- input Email -->
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Correo</label>
+                        <input type="body" class="form-control" id="email" name="email" placeholder="Ingresá tu correo"/>
+                        <p class="form-text alert-hide">Obligatorio</p>
+                    </div>
+                    <!-- input Contraseña -->
+                    <div class="mb-3">
+                        <label for="pass" class="form-label">Contraseña</label>
+                        <input type="password" class="form-control" id="pass" name="pass"
+                            placeholder="Ingresá una contraseña" value=""/>
+                        <p class="form-text alert-hide">Obligatorio</p>
+                    </div>
+                    <button type="submit" class="btn btn-outline-dark" name="send">Login</button>
+                </form>
+                <div>
+                    <p class="text-danger">
+                        <%= locals.msg && msg %>
+                    </p>
+                </div>
+            </div>
+
+        </main>
+        <%- include('./partials/footer') %>
+      </body>
+    </html>
