@@ -6,16 +6,17 @@
   <body>
     <%- include('./partials/header') %>
     <main>
-      <div class="nav_menu">
-        <div class="box--admin">
-          <p class="header--title">Administrador</p>
+      <div class="form-container">
+        <div class="nav-menu">
+        <div class="register-premise">
+          <p class="premise">Registrate para tener productos hechos con amor</p>
         </div>
-        <div class="box--login">
-          <a href="/users/login" class="login">Login</a>
+        <div class="box-login">
+          <a href="/login" class="login">Login</a>
         </div>
       </div>
-      <div class="card--form">
-          <h4 class="card-title">Registro</h4>
+      <div class="register-form">
+          <h4 class="register-title">Registro</h4>
           <!-- Formulario para registrarse -->
           <form class="access-form" method="POST">
             <!-- input Nombre Completo -->
@@ -50,6 +51,7 @@
             <button type="submit" class="btn btn-outline-dark">Registrarme</button>
           </form>
         </div>
+      </div>
       </main>
       <%- include('./partials/footer') %>
     </body>

@@ -6,16 +6,17 @@
   <body>
     <%- include('./partials/header') %>
     <main>
-        <div class="nav_menu">
-            <div class="box--admin">
-                <p class="header--title">Administrador</p>
+        <div class="form-container">
+            <div class="nav-menu">
+            <div class="login-premise">
+                <p class="premise">¡Bienvenido de vuelta!</p>
             </div>
             <div class="box--register">
-                <a href="/users/register" class="register">Registrarse</a>
+                <a href="/register" class="register">Registrarse</a>
             </div>
         </div>            
-        <div class="card--form">
-                <h4 class="card-title">Login</h4>
+        <div class="login-form">
+                <h4 class="login-title">Login</h4>
                 <!-- Formulario para logearse -->
                 <form class="access-form" method="POST">
                     <!-- input Email -->
@@ -39,7 +40,7 @@
                     </p>
                 </div>
             </div>
-
+        </div>
         </main>
         <%- include('./partials/footer') %>
       </body>

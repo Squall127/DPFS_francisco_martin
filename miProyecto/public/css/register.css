@@ -1,0 +1,25 @@
+body {
+    background-color:bisque;
+}
+
+/* SECCIÓN PORTADA */
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.register-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color:rgb(255, 186, 101);
+    width:fit-content;
+    align-items: center;
+    text-align: center;
+    padding: 30px;
+    border-radius: 15px;
+    margin:auto;
+}
