@@ -1,22 +1,22 @@
 <!DOCTYPE html>
 <html>
-  <%- include('./partials/head',{
+  <%- include('../partials/head',{
     title : 'Login'
   }) %>
   <body>
-    <%- include('./partials/header') %>
+    <%- include('../partials/header') %>
     <main>
       <div class="form-container">
         <div class="nav-menu">
         <div class="register-premise">
-          <p class="premise">Registrate para tener productos hechos con amor</p>
+          <p class="premise">Bienvenid@ a la familia</p>
         </div>
         <div class="box-login">
-          <a href="/login" class="login">Login</a>
+          <p>¿Ya tenés cuenta? <a href="/users/login">Inicia Sesión</a></p>
         </div>
       </div>
       <div class="register-form">
-          <h4 class="register-title">Registro</h4>
+          <h4 class="register-title">Registrate</h4>
           <!-- Formulario para registrarse -->
           <form class="access-form" method="POST">
             <!-- input Nombre Completo -->
@@ -53,6 +53,6 @@
         </div>
       </div>
       </main>
-      <%- include('./partials/footer') %>
+      <%- include('../partials/footer') %>
     </body>
   </html>

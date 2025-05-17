@@ -23,3 +23,11 @@ main {
     border-radius: 15px;
     margin:auto;
 }
+
+.register {
+    color: #B80F0A;
+}
+
+div {
+    font-family: "Borel", cursive;
+}

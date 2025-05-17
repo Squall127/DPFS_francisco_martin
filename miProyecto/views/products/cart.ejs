@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+    <%- include('../partials/head',{
+        title : 'Home'
+      }) %>
+        <%- include('../partials/header') %>
+<body>
+    <main>
+        <div class="cart-container">
+            <div class="cart-premise">
+                <p class="premise">Tu Carrito</p>
+            </div>
+            <div class="cart-list">
+              <div class="cart-list--product"><img width=80px src="/images/products/plato-rojo.webp" alt=""><p>Plato Playo - rojo</p><div class="cart-list--product---price">$150,00</div></div>
+              <div class="cart-list--product"><img width=80px src="/images/products/taza-azul.webp" alt=""><p>Taza Café con Leche - azul</p><div class="cart-list--product---price">$100,00</div></div>
+            </div>
+            <div class="cart-buy">Total: $350,00<p>Comprar</p></div>
+          </div>       
+        </main>
+        <%- include('../partials/footer') %>
+</body>
+</html>

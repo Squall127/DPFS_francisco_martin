@@ -14,12 +14,27 @@ main {
 .register-form {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     background-color:rgb(255, 186, 101);
     width:fit-content;
-    align-items: center;
-    text-align: center;
-    padding: 30px;
+    padding-inline: 30px;
+    padding-bottom: 10px;
     border-radius: 15px;
     margin:auto;
+}
+
+.register-form div {
+    padding: 10px;
+    justify-content:first baseline;
+}
+
+.premise {
+    font-size: 30px;
+}
+
+.login {
+    color: #B80F0A;
+}
+
+div {
+    font-family: "Borel", cursive;
 }

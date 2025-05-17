@@ -7,8 +7,10 @@ router.get('/', function(req, res, next) {
   res.render('index', { title: 'Express' });
 });
 
-router.get('/product',indexController.product);
-router.get('/login',indexController.login);
-router.get('/register',indexController.register);
+router.get('/products/detail',indexController.detail);
+router.get('/users/login',indexController.login);
+router.get('/users/register',indexController.register);
+router.get('/products/create',indexController.create);
+router.get('/products/cart',indexController.cart);
 
 module.exports = router;

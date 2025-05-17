@@ -23,7 +23,11 @@ p {
 }
 
 .product-name {
-    font-size: 20px;
+    margin: 0
+}
+
+.product-name p{
+    font-size: 30px;
 }
 
 .product--choice-premise {

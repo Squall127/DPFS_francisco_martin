@@ -13,6 +13,7 @@ body {
     flex-wrap: wrap;
     flex-direction: row;
     padding: 150px;
+    padding-top: 250px;
     padding-bottom:20px;
 }
 
@@ -44,6 +45,53 @@ body {
     padding-left: 80px;
 }
 
+/* SECCIÓN DE COMISIONES */
+
+.comissions-box {
+    display: flex;
+    flex-direction: column;
+    background-image: url(/images/backgrounds/handmade-painting-on-a-ceramic-plate-traditional-crafts-ai-generated-photo.jpg);
+    background-blend-mode:overlay;
+    background-size: cover;
+    background-color: rgba(255, 255, 255, 0.6);
+    flex-wrap: wrap;
+    padding: 150px;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.comissions-box--title {
+    font-family: "Borel", cursive;
+    font-size: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.comissions-box--title p{
+    color: #B80F0A;
+    margin-top: 0;
+    padding-left: 15px;
+}
+
+.comissions-box--premise {
+    text-align:center;
+    font-family: "Borel", cursive;
+}
+
+.comissions-box--button{
+    text-align: center;
+    font-family: "Borel", cursive;
+    justify-content: center;
+    background-color: bisque;
+    margin:auto;
+    margin-top: 15px;
+    padding-inline: 15px;
+    display: inline-flex;
+    font-size:20px;
+    border-radius: 15px;
+}
+
 /* SECCIÓN TIPO DE PRODUCTO 1 */
 
 .type-product-plate {
@@ -52,7 +100,7 @@ body {
     justify-content: center;
     padding: 30px;
     background-color:rgb(255, 249, 241,0.5);
-    margin: 10px;
+    margin-top: 10px;
 }
 
 .type-product-cup {
@@ -72,13 +120,20 @@ body {
 .flex-types-product {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    align-items:center;
-    margin-left: 300px;
-    margin-right: 300px;
+    justify-content: space-evenly;
+    align-items: baseline;
+    margin:auto;
+    margin-inline: 10px;
+    padding-inline: 50px;
 }
 
 .type-name {
     text-align:center;
     font-family: "Borel", cursive;
+}
+
+/* SECCIÓN TIPO DE PRODUCTO 2 */
+
+.type-product-cup {
+    padding-bottom: 200px;
 }

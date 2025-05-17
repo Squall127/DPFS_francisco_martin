@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html>
-  <%- include('./partials/head',{
+  <%- include('../partials/head',{
     title : 'Login'
   }) %>
   <body>
-    <%- include('./partials/header') %>
+    <%- include('../partials/header') %>
     <main>
         <div class="form-container">
             <div class="nav-menu">
@@ -12,7 +12,7 @@
                 <p class="premise">¡Bienvenido de vuelta!</p>
             </div>
             <div class="box--register">
-                <a href="/register" class="register">Registrarse</a>
+                <p>¿Aún no tenés cuenta? <a href="/users/register">¡Registrate!</a></p>
             </div>
         </div>            
         <div class="login-form">
@@ -42,6 +42,6 @@
             </div>
         </div>
         </main>
-        <%- include('./partials/footer') %>
+        <%- include('../partials/footer') %>
       </body>
     </html>
