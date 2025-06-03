@@ -33,6 +33,10 @@ Link al Tablero de Trabajo en TRELLO
 https://trello.com/b/yU0qOXcq/ponucha-sitio-web
 
 
+-
 
+Link al phpmyadmin
+
+http://localhost/phpmyadmin/
 
 - Francisco Martín -
