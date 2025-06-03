@@ -1,8 +1,12 @@
 module.exports = (sequelize, DataTypes) => {
     const alias = "Product"
     const cols = {
-        p_name: {
-            type: DataTypes.STRING
+        id: {
+            type: DataTypes.INTEGER(50),
+            primaryKey: true
+        },
+        p_name: { 
+            type: DataTypes.STRING 
         },
         price: {
             type: DataTypes.DECIMAL(10,2)
@@ -13,9 +17,13 @@ module.exports = (sequelize, DataTypes) => {
         p_image: {
             type: DataTypes.BLOB
         },
+        c_id: {
+            type: DataTypes.INTEGER(50)
+        }
     }
     const config = {
-        tableName: "products"
+        tableName: "products",
+        timestamps: false
     }
     
     const Product = sequelize.define(alias,cols,config)
