@@ -13,20 +13,18 @@ module.exports = {
 
     db.Product.findAll({
     attributes: ['id', 'p_name', 'p_image', 'price', 'c_id'],
-    raw: true // ✅ Makes sure Sequelize returns plain objects instead of wrapped ones
+    raw: true
 })
     .then(products => {
-        console.log("✅ Raw Products:", products); // Debugging Step
+        console.log("✅ Raw Products:", products);
 
-        // Convert BLOB images to Base64 format
         const updatedProducts = products.map(product => ({
             ...product,
             p_image: `data:image/png;base64,${Buffer.from(product.p_image).toString("base64")}`
         }));
 
-        console.log("✅ Final Processed Products:", updatedProducts); // Another Debug Step
+        console.log("✅ Final Processed Products:", updatedProducts);
 
-        // ✅ Send the response ONLY ONCE
         res.render("home", { products: updatedProducts });
     })
     .catch(error => {
