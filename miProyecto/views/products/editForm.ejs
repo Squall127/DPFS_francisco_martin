@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+    <%- include('../partials/head',{
+        title : 'Home'
+      }) %>
+        <%- include('../partials/header') %>
+<body>
+    <main>
+        <div class="form-container">
+            <div class="nav-menu">
+            <div class="login-premise">
+                <p class="premise">¡Edita tu producto!</p>
+            </div>
+        </div>            
+        <div class="login-form">
+                <h4 class="login-title">Producto</h4>
+                <!-- Formulario para logearse -->
+                <form class="access-form" method="POST" action="/products/editForm/:id">
+                    <!-- input Nombre -->
+                    <div class="mb-3">
+                        <label for="name" class="form-label">Nombre</label>
+                        <input type="text" class="form-control" id="p_name" name="p_name" placeholder="Nombre del Producto" value="<%= prodFound.p_name %>"/>
+                        <p class="form-text alert-hide">Obligatorio</p>
+                    </div>
+                    <!-- input Descripcion -->
+                    <div class="mb-3">
+                        <label for="description" class="form-label">Descripción</label>
+                        <input type="text" class="form-control" id="description" name="description" placeholder="Descripción del Producto" value="<%= prodFound.description %>"/>
+                        <p class="form-text alert-hide">Obligatorio</p>
+                    </div>
+                    <!-- input Categoría -->
+                    <div class="mb-3">
+                        <label for="category">Categoría</label>
+                        <select name="c_id" id="c_id">
+                            <option selected disabled>Selecciona una opción</option>
+                            <% categories.forEach(category => { %>
+                             <option value="<%= category.id %>"><%=category.c_name%></option>
+                            <% }) %>
+                        </select>
+                        <p class="form-text alert-hide">Obligatorio</p>
+                    </div>
+                    <!-- input Precio -->
+                    <div class="mb-3">
+                        <label for="price" class="form-label">Precio</label>
+                         <input type="text" class="form-control" id="price" name="price" placeholder="Precio del Producto" value="<%= prodFound.price %>"/>
+                         <p class="form-text alert-hide">Obligatorio</p>
+                     </div>
+                    <!-- input Imágen -->
+                    <div class="mb-3">
+                        <label for="image">Imágen</label>
+                        <input type="file" class="form-control" id="p_image" name="image" placeholder="Imágen del Producto"/>
+                        <p class="form-text alert-hide">Obligatorio</p>
+                    </div>
+                    <button type="submit" class="btn btn-outline-dark" name="send">Editar Producto</button>
+                </form>
+                <div>
+                    <p class="text-danger">
+                        <%= locals.msg && msg %>
+                    </p>
+                </div>
+            </div>
+        </div>
+        </main>
+        <%- include('../partials/footer') %>
+</body>
+</html>

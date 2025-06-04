@@ -8,7 +8,7 @@ db.sequelize.authenticate()
 
 module.exports = {
 
- home: (req, res) => {
+ home: async (req, res) => {
     console.log("Home controller is executing!");
 
     db.Product.findAll({

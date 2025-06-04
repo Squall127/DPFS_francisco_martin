@@ -15,43 +15,42 @@
         <div class="login-form">
                 <h4 class="login-title">Producto</h4>
                 <!-- Formulario para logearse -->
-                <form class="access-form" method="POST">
+                <form class="access-form" method="POST" action="/products/addForm">
                     <!-- input Nombre -->
                     <div class="mb-3">
-                        <label for="email" class="form-label">Nombre</label>
-                        <input type="text" class="form-control" id="name" name="name" placeholder="Nombre del Producto"/>
+                        <label for="name" class="form-label">Nombre</label>
+                        <input type="text" class="form-control" id="p_name" name="p_name" placeholder="Nombre del Producto"/>
                         <p class="form-text alert-hide">Obligatorio</p>
                     </div>
                     <!-- input Descripcion -->
                     <div class="mb-3">
-                        <label for="email" class="form-label">Descripción</label>
+                        <label for="description" class="form-label">Descripción</label>
                         <input type="text" class="form-control" id="description" name="description" placeholder="Descripción del Producto"/>
-                        <p class="form-text alert-hide">Obligatorio</p>
-                    </div>
-                    <!-- input Imágen -->
-                    <div class="mb-3">
-                        <label for="email" class="form-label">Imágen</label>
-                        <input type="text" class="form-control" id="image" name="image" placeholder="Imágen del Producto"/>
                         <p class="form-text alert-hide">Obligatorio</p>
                     </div>
                     <!-- input Categoría -->
                     <div class="mb-3">
-                        <label for="email" class="form-label">Categoría</label>
-                        <input type="text" class="form-control" id="category" name="category" placeholder="Categoría del Producto"/>
-                        <p class="form-text alert-hide">Obligatorio</p>
-                    </div>
-                    <!-- input Colores -->
-                    <div class="mb-3">
-                        <label for="email" class="form-label">Colores</label>
-                        <input type="text" class="form-control" id="color" name="color" placeholder="Color del Producto"/>
+                        <label for="category">Categoría</label>
+                        <select name="c_id" id="c_id">
+                            <option selected disabled>Selecciona una opción</option>
+                            <% categories.forEach(category => { %>
+                             <option value="<%= category.id %>"><%=category.c_name%></option>
+                            <% }) %>
+                        </select>
                         <p class="form-text alert-hide">Obligatorio</p>
                     </div>
                     <!-- input Precio -->
                     <div class="mb-3">
-                        <label for="email" class="form-label">Precio</label>
+                        <label for="price" class="form-label">Precio</label>
                          <input type="text" class="form-control" id="price" name="price" placeholder="Precio del Producto"/>
                          <p class="form-text alert-hide">Obligatorio</p>
                      </div>
+                    <!-- input Imágen -->
+                    <div class="mb-3">
+                        <label for="image">Imágen</label>
+                        <input type="file" class="form-control" id="p_image" name="image" placeholder="Imágen del Producto"/>
+                        <p class="form-text alert-hide">Obligatorio</p>
+                    </div>
                     <button type="submit" class="btn btn-outline-dark" name="send">Crear Producto</button>
                 </form>
                 <div>
